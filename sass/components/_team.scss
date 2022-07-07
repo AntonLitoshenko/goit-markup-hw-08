@@ -1,0 +1,39 @@
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__list {
+  --card-item: 4;
+}
+
+.team__item {
+  border: 1px;
+  border-top: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-worker-name {
+  font-weight: 500;
+  color: var(--main-dark-color);
+  margin-bottom: 10px;
+}
+
+.team-discription {
+  margin-bottom: 16px;
+}
+
+.team-worker-name,
+.team-discription {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

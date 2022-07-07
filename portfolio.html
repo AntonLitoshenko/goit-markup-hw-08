@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo link" href="">Web<span class="logo-header">Studio</span> </a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link anderline active link" href="">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="nav__link contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="nav__icon" width="16" height="12">
+                <use href="./img/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="nav__link contacts__link link" href="tel:+380961111111">
+              <svg class="nav__icon" width="10" height="16">
+                <use href="./img/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio-nav section">
+        <div class="container">
+          <h1 hidden>Портфолио</h1>
+          <ul class="portfolio-nav-list list">
+            <li class="portfolio-nav-list-item">
+              <button class="portfolio-nav-list-btn current" type="button">Все</button>
+            </li>
+            <li class="portfolio-nav-list-item">
+              <button class="portfolio-nav-list-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-nav-list-item">
+              <button class="portfolio-nav-list-btn" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-nav-list-item">
+              <button class="portfolio-nav-list-btn" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-nav-list-item">
+              <button class="portfolio-nav-list-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="projects-list card-set list">
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img
+                    src="./img/img_one.jpg"
+                    alt="Фото сайта технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Технокряк</h2>
+                  <p class="projects-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img src="./img/img_two.jpg" alt="Фото постера" width="370" height="294" />
+                  <p class="projects-top-text">
+                    Плакаты – невероятно творческая форма дизайна. Их цель заключается в том, чтобы
+                    захватить и удержать внимание.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">
+                    Постер <span lang="en">Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="projects-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img src="./img/img_three.jpg" alt="Логотип ресторана" width="370" height="294" />
+                  <p class="projects-top-text">
+                    Внедряя мобильное приложение для ресторана, бизнес получает колоссальные
+                    преимущества. Конечно, требуются инвестиции, но в долгосрочной перспективе они
+                    окупаются и приносят большую прибыль.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="projects-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img src="./img/img_four.jpg" alt="Фото проекта прайм" width="370" height="294" />
+                  <p class="projects-top-text">
+                    Премиум — это не штучный люкс для сверхдоходной аудитории, это все еще массовое
+                    производство, но более высокого качества, чем основной рынок
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Проект <span lang="en">Prime</span></h2>
+                  <p class="projects-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img
+                    src="./img/img_five.jpg"
+                    alt="Фото проекта коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects-top-text">
+                    Упаковка продукта — один из ключевых этапов маркетинга. С ее помощью покупатели
+                    идентифицируют бренд и конкретный товар.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="projects-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img
+                    src="./img/img_six.jpg"
+                    alt="Фото сайта вдохновление"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects-top-text">
+                    «У всех нас есть два варианта: мы можем просто жить, а можем создавать
+                    собственную жизнь и судьбу», – Джим Рон
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="projects-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img src="./img/img_seven.jpg" alt="Фото дизайна" width="370" height="294" />
+                  <p class="projects-top-text">
+                    Ограниченная упаковка, лимитированная серия, весенний дизайн, новогоднее
+                    предложение – все это перечень особенных сезонных продуктов, которые регулярно
+                    выпускают компании.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="projects-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img
+                    src="./img/img_eight.jpg"
+                    alt="Фото логотипа проекта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects-top-text">
+                    Правильно оформленные этикетки предоставляют всю необходимую информацию о товаре
+                    и правила его эксплуатации. А в сочетании с нанесенным на лейбл логотипом
+                    бренда, такие изделия делают ваш бренд узнаваемым и популярным
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="projects-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item card-set-item">
+              <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="projects-top-wrap">
+                  <img
+                    src="./img/img_nine.jpg"
+                    alt="Фото работы приложения"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects-top-text">
+                    «Если вы думаете, что вы способны на что-то, вы правы, если вы думаете, что у
+                    вас не получится что-то, вы тоже правы», – Генри Форд.
+                  </p>
+                </div>
+                <div class="projects-card">
+                  <h2 class="projects-title" lang="en">Growing Business</h2>
+                  <p class="projects-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-rotation">
+        <div class="footer-container">
+          <a class="logo link" href="">Web<span class="logo-footer">Studio</span> </a>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  class="footer-link address-item link"
+                  href="https://goo.gl/maps/JGFZeKVPoiUHQ6UP8"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item">
+                <a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-container">
+          <h3 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="social footer-social-list list">
+            <li class="social__item">
+              <a class="social__link footer-social-link" href="">
+                <svg class="social__icon footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link footer-social-link" href="">
+                <svg class="social__icon footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link footer-social-link" href="">
+                <svg class="social__icon footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link footer-social-link" href="">
+                <svg class="social__icon footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-sub">
+          <p class="footer-sub-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <form class="footer-form">
+            <input type="email" class="submit-input" name="user-email" placeholder="E-mail" />
+            <button type="submit" class="send-btn-sub">
+              Подписаться
+              <svg class="send-btn-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
