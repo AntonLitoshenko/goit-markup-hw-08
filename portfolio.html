@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container header-container">
         <a class="logo link" href="">Web<span class="logo-header">Studio</span> </a>
-        <nav class="nav">
+        <nav class="nav header-nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link" href="index.html">Студия</a>
@@ -55,6 +55,58 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="mob-menu-icon" width="40" height="40">
+            <use href="./img/sprite.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-container">
+          <button type="button" class="menu-close-btn">
+            <svg class="mob-menu-icon" width="40" height="40">
+              <use href="./img/sprite.svg#icon-close-menu-mob"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link anderline active link" href="">Студия</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-contacts list">
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link mail-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link tell-link link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-soc-list list">
+            <li class="menu-soc-item">
+              <a class="menu-soc-link line link" href="">Instagram</a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link line link" href="">Twitter</a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link line link" href="">Facebook</a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -78,16 +130,33 @@
               <button class="portfolio-nav-list-btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="projects-list card-set list">
-            <li class="projects-list-item card-set-item">
+          <ul class="projects-list list">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img
-                    src="./img/img_one.jpg"
-                    alt="Фото сайта технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/img_one.jpg 1x, 
+                      ./img/img_one_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_one_tab.jpg 1x, 
+                      ./img/img_one_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_one_mob.jpg 1x, 
+                      ./img/img_one_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_one.jpg"
+                      alt="Фото сайта технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -100,10 +169,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img src="./img/img_two.jpg" alt="Фото постера" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./img/img_two.jpg 1x, 
+                      ./img/img_two_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_two_tab.jpg 1x, 
+                      ./img/img_two_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_two_mob.jpg 1x, 
+                      ./img/img_two_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_two.jpg"
+                      alt="Фото постера"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Плакаты – невероятно творческая форма дизайна. Их цель заключается в том, чтобы
                     захватить и удержать внимание.
@@ -117,10 +208,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img src="./img/img_three.jpg" alt="Логотип ресторана" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./img/img_three.jpg 1x, 
+                      ./img/img_three_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_three_tab.jpg 1x, 
+                      ./img/img_three_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_three_mob.jpg 1x, 
+                      ./img/img_three_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_three.jpg"
+                      alt="Логотип ресторана"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Внедряя мобильное приложение для ресторана, бизнес получает колоссальные
                     преимущества. Конечно, требуются инвестиции, но в долгосрочной перспективе они
@@ -133,10 +246,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img src="./img/img_four.jpg" alt="Фото проекта прайм" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./img/img_four.jpg 1x, 
+                      ./img/img_four_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_four_tab.jpg 1x, 
+                      ./img/img_four_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_four_mob.jpg 1x, 
+                      ./img/img_four_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_four.jpg"
+                      alt="Фото проекта прайм"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Премиум — это не штучный люкс для сверхдоходной аудитории, это все еще массовое
                     производство, но более высокого качества, чем основной рынок
@@ -148,15 +283,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img
-                    src="./img/img_five.jpg"
-                    alt="Фото проекта коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/img_five.jpg 1x, 
+                      ./img/img_five_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_five_tab.jpg 1x, 
+                      ./img/img_five_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_five_mob.jpg 1x, 
+                      ./img/img_five_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_five.jpg"
+                      alt="Фото проекта коробки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Упаковка продукта — один из ключевых этапов маркетинга. С ее помощью покупатели
                     идентифицируют бренд и конкретный товар.
@@ -168,15 +320,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img
-                    src="./img/img_six.jpg"
-                    alt="Фото сайта вдохновление"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/img_six.jpg 1x, 
+                      ./img/img_six_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_six_tab.jpg 1x, 
+                      ./img/img_six_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_six_mob.jpg 1x, 
+                      ./img/img_six_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_six.jpg"
+                      alt="Фото сайта вдохновление"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     «У всех нас есть два варианта: мы можем просто жить, а можем создавать
                     собственную жизнь и судьбу», – Джим Рон
@@ -188,10 +357,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img src="./img/img_seven.jpg" alt="Фото дизайна" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./img/img_seven.jpg 1x, 
+                      ./img/img_seven_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_seven_tab.jpg 1x, 
+                      ./img/img_seven_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_seven_mob.jpg 1x, 
+                      ./img/img_seven_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_seven.jpg"
+                      alt="Фото дизайна"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ограниченная упаковка, лимитированная серия, весенний дизайн, новогоднее
                     предложение – все это перечень особенных сезонных продуктов, которые регулярно
@@ -204,15 +395,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img
-                    src="./img/img_eight.jpg"
-                    alt="Фото логотипа проекта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/img_eight.jpg 1x, 
+                      ./img/img_eight_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_eight_tab.jpg 1x, 
+                      ./img/img_eight_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_eight_mob.jpg 1x, 
+                      ./img/img_eight_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_eight.jpg"
+                      alt="Фото логотипа проекта"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Правильно оформленные этикетки предоставляют всю необходимую информацию о товаре
                     и правила его эксплуатации. А в сочетании с нанесенным на лейбл логотипом
@@ -225,15 +433,32 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a class="projects-link link" href="" target="_blank" rel="noreferrer noopener">
                 <div class="projects-top-wrap">
-                  <img
-                    src="./img/img_nine.jpg"
-                    alt="Фото работы приложения"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/img_nine.jpg 1x, 
+                      ./img/img_nine_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/img_nine_tab.jpg 1x, 
+                      ./img/img_nine_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img_nine_mob.jpg 1x, 
+                      ./img/img_nine_mob_2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./img/img_nine.jpg"
+                      alt="Фото работы приложения"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     «Если вы думаете, что вы способны на что-то, вы правы, если вы думаете, что у
                     вас не получится что-то, вы тоже правы», – Генри Форд.

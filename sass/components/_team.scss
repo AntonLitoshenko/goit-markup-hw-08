@@ -3,7 +3,11 @@
 }
 
 .team__list {
-  --card-item: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  // margin-left: -30px;
 }
 
 .team__item {
@@ -12,13 +16,35 @@
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // margin-left: 30px;
+  // flex-basis: calc(100% / 4 - 30px);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team-card {
+  // padding-top: 30px;
+  // padding-bottom: 30px;
+  // padding-left: 32px;
+  // padding-right: 32px;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 122px;
+  padding-right: 122px;
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .team-worker-name {

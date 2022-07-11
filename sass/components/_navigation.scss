@@ -1,10 +1,7 @@
 .nav__list {
   color: var(--main-dark-color);
   display: flex;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .nav__link {
@@ -45,13 +42,4 @@
   .nav__link:focus & {
     fill: var(--accent-color);
   }
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
 }
