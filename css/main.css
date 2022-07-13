@@ -215,6 +215,7 @@ body {
   .contacts {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -237,6 +238,7 @@ body {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 1;
 }
 
 .mob-menu-container {
@@ -1011,6 +1013,7 @@ body {
 .projects-link {
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1042,6 +1045,7 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .projects-title {
