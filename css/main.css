@@ -507,7 +507,7 @@ body {
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -674,7 +674,7 @@ body {
   justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .client__item {
     flex-basis: calc(50% - 30px);
   }
